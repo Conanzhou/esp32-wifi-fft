@@ -1,5 +1,6 @@
-# Wifi SCAN Example
+# Wifi SCAN and FFT
 
-This example shows how to scan for available set of APs.
-
-* The SCAN_LIST_SIZE parameter needs to be set from the example configuration menu. It represents maximum number of scan list entries that driver can populate.
+scan for available set of APs.
+connect to the chosen one.
+get the FFT parameter from severs.
+print out the output of FFT.
