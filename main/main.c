@@ -1,15 +1,4 @@
-/* Scan Example
 
-   This example code is in the Public Domain (or CC0 licensed, at your option.)
-
-   Unless required by applicable law or agreed to in writing, this
-   software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-   CONDITIONS OF ANY KIND, either express or implied.
-*/
-
-/*
-    This example shows how to scan for available set of APs.
-*/
 #include <string.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/event_groups.h"
@@ -127,7 +116,10 @@ static void wifi_scan(void)
 
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
     ESP_ERROR_CHECK(esp_wifi_start());
-    ESP_ERROR_CHECK(esp_wifi_scan_start(NULL, true));
+
+    wifi_scan_config_t ap_des
+    ESP_ERROR_CHECK(esp_wifi_scan_start(NULL, true)); //
+
     ESP_ERROR_CHECK(esp_wifi_scan_get_ap_records(&number, ap_info));
     ESP_ERROR_CHECK(esp_wifi_scan_get_ap_num(&ap_count));
     ESP_LOGI(TAG, "Total APs scanned = %u", ap_count);
@@ -156,4 +148,6 @@ void app_main(void)
     ESP_ERROR_CHECK(ret);
 
     wifi_scan();
+    esp_wifi_get_auto_connect();
+    esp_wifi_get_config();
 }
