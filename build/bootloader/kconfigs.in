@@ -1,5 +1,0 @@
-source "/home/darkest/esp-idf/components/efuse/Kconfig"
-source "/home/darkest/esp-idf/components/esp32/Kconfig"
-source "/home/darkest/esp-idf/components/esp_common/Kconfig"
-source "/home/darkest/esp-idf/components/log/Kconfig"
-source "/home/darkest/esp-idf/components/spi_flash/Kconfig"

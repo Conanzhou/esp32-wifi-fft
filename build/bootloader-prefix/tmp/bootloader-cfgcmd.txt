@@ -1,1 +1,0 @@
-cmd='/usr/bin/cmake;-DSDKCONFIG=/home/darkest/esp/wifi-scan-fft-window/sdkconfig;-DIDF_PATH=/home/darkest/esp-idf;-DIDF_TARGET=esp32;-DPYTHON_DEPS_CHECKED=1;-DPYTHON=/home/darkest/.espressif/python_env/idf4.2_py3.9_env/bin/python;-DEXTRA_COMPONENT_DIRS=/home/darkest/esp-idf/components/bootloader;-DLEGACY_INCLUDE_COMMON_HEADERS=;-GNinja;<SOURCE_DIR><SOURCE_SUBDIR>'
